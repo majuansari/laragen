@@ -7,18 +7,16 @@ use App\Repositories\Repository;
 
 class $MODEL_NAME$Repository extends Repository
 {
+
+    /**
+     * Associated Repository Model
+     */
+     const MODEL = $MODEL_NAME$::class;
+
     /**
      * @var array
      */
     protected $fieldSearchable = [
         $FIELDS$
     ];
-
-    /**
-     * Configure the Model
-     **/
-    public function model()
-    {
-        return $MODEL_NAME$::class;
-    }
 }

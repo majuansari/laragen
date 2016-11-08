@@ -127,6 +127,15 @@ class BaseCommand extends Command
             $menuGenerator = new MenuGenerator($this->commandData);
             $menuGenerator->generate();
         }
+
+        if (  1 || !$this->isSkip('tests') and $this->commandData->getAddOn('tests')) {
+            $repositoryTestGenerator = new RepositoryTestGenerator($this->commandData);
+            $repositoryTestGenerator->generate();
+
+            $testTraitGenerator = new TestTraitGenerator($this->commandData);
+            $testTraitGenerator->generate();
+
+        }
     }
 
     public function performPostActions($runMigration = false)
