@@ -97,12 +97,7 @@ if (!function_exists('get_template_file_path')) {
             return $path;
         }
 
-        $outside_templates = ['adminlte-templates','core-templates', 'swagger-generator'];
-        if(in_array($templateType,$outside_templates)   ) {
-            return base_path('vendor/infyomlabs/' . $templateType . '/templates/' . $templateName . '.stub');
-        }else{
-            return base_path('vendor/majuansari/' . $templateType . '/templates/' . $templateName . '.stub');
-        }
+        return base_path('vendor/majuansari/'.$templateType.'/templates/'.$templateName.'.stub');
     }
 }
 

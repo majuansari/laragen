@@ -27,6 +27,9 @@ class LayoutPublishCommand extends PublishBaseCommand
      */
     public function handle()
     {
+        $this->comment("\nlayout copy disabled as not needed");
+
+        return;
         $this->copyView();
         $this->updateRoutes();
         $this->publishHomeController();
