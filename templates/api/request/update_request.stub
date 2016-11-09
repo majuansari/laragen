@@ -3,9 +3,9 @@
 namespace $NAMESPACE_API_REQUEST$;
 
 use $NAMESPACE_MODEL$\$MODEL_NAME$;
-use App\Http\Requests\Request;
+use InfyOm\Generator\Request\APIRequest;
 
-class Update$MODEL_NAME$APIRequest extends Request
+class Update$MODEL_NAME$APIRequest extends APIRequest
 {
     /**
      * Determine if the user is authorized to make this request.

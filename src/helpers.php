@@ -97,6 +97,9 @@ if (!function_exists('get_template_file_path')) {
             return $path;
         }
 
+        if($templateType  == 'custom-templates') {
+            return base_path('vendor/majuansari/laravel-generator/templates/views/' . $templateType . '/templates/' . $templateName . '.stub');
+        }
         return base_path('vendor/majuansari/'.$templateType.'/templates/'.$templateName.'.stub');
     }
 }
