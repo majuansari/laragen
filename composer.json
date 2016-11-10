@@ -1,25 +1,14 @@
 {
-    "name": "infyomlabs/laravel-generator",
+    "name": "majuansari/laravel-generator",
     "description": "InfyOm Laravel Generator",
     "keywords": [
-        "laravel",
-        "api",
-        "model",
-        "request",
-        "migration",
-        "model",
-        "crud",
-        "repository",
-        "view",
-        "test",
-        "generator",
-        "swagger"
+        "laragen"
     ],
     "license": "MIT",
     "authors": [
         {
             "name": "Mitul Golakiya",
-            "email": "me@mitul.me"
+            "email": "me@noreply.me"
         }
     ],
     "require": {
